@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ignite — Dan Bilzerian</title>
+  <meta name="description" content="Official Ignite feature — Dan Bilzerian. Lifestyle, highlights, and press." />
+
+  <style>
+    :root{
+      --accent:#ff4d4f;
+      --dark:#0b0b0b;
+      --muted:#7a7a7a;
+      --glass: rgba(255,255,255,0.06);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#0f1114;color:#eee;line-height:1.45}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .logo{font-weight:700;letter-spacing:1px}
+    nav a{color:#ddd;text-decoration:none;margin-left:18px;font-size:0.95rem}
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:20px;
+      align-items:center;
+      padding:48px 0;
+    }
+    .hero-inner{
+      background:linear-gradient(90deg, rgba(0,0,0,0.55), rgba(0,0,0,0.25)), url('https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+      border-radius:16px;padding:36px;color:white;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+    }
+    .hero h1{margin:0;font-size:2.25rem}
+    .sub{color:var(--muted);margin-top:8px}
+    .cta{display:inline-block;margin-top:18px;padding:12px 18px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    /* grid for content */
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:28px}
+    .card{background:var(--glass);padding:20px;border-radius:12px;backdrop-filter: blur(6px)}
+    .about h2{margin-top:0}
+    .stats{display:flex;gap:12px;margin-top:16px}
+    .stat{flex:1;text-align:center;padding:12px;border-radius:8px;background:rgba(255,255,255,0.03)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+    aside .card + .card{margin-top:18px}
+    footer{padding:20px 0;color:var(--muted);text-align:center;margin-top:30px;font-size:0.9rem}
+    /* responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .gallery img{height:110px}
+      .hero h1{font-size:1.5rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">IGNITE</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#press">Press</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-inner card">
+        <h1>Dan Bilzerian — Ignite Feature</h1>
+        <p class="sub">Exploring a controversial, high-octane lifestyle. Photos, highlights, and press coverage — curated for Ignite.</p>
+        <a class="cta" href="#about">Explore the story</a>
+        <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+          <div style="min-width:120px;">
+            <strong>Followers</strong><div style="font-size:1.25rem">—</div>
+          </div>
+          <div style="min-width:120px;">
+            <strong>Media Mentions</strong><div style="font-size:1.25rem">—</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main>
+        <section id="about" class="card about">
+          <h2>About</h2>
+          <p>
+            Daniel "Dan" Bilzerian is a social-media personality and influencer known for his poker background and extravagant public lifestyle.
+            This feature highlights public appearances, media coverage, and notable projects associated with him.
+          </p>
+
+          <div style="display:flex;gap:16px;margin-top:18px;flex-wrap:wrap">
+            <div style="flex:1;min-width:180px">
+              <h4>Key highlights</h4>
+              <ul>
+                <li>High-profile social presence</li>
+                <li>Business ventures and media projects</li>
+                <li>Controversies and press coverage</li>
+              </ul>
+            </div>
+            <div style="flex:1;min-width:180px">
+              <h4>Quick links</h4>
+              <ul>
+                <li><a href="#gallery" style="color:inherit">Image Gallery</a></li>
+                <li><a href="#press" style="color:inherit">Press</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" class="card" style="margin-top:20px">
+          <h2>Gallery</h2>
+          <div class="gallery" aria-hidden="false">
+            <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&w=800&q=60" alt="Feature image 1">
+            <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=60" alt="Feature image 2">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=60" alt="Feature image 3">
+            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=800&q=60" alt="Feature image 4">
+            <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=60" alt="Feature image 5">
+            <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=60" alt="Feature image 6">
+          </div>
+        </section>
+
+        <section id="press" class="card" style="margin-top:20px">
+          <h2>Press & Notes</h2>
+          <p>
+            A curated list of notable coverage and major updates. (Replace these bullets with real linked citations.)
+          </p>
+          <ul>
+            <li>Feature profiles and interviews</li>
+            <li>Business disputes and company relations</li>
+            <li>Book / autobiography references</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Quick facts</h3>
+          <p style="color:var(--muted)">Use reliable sources for verification and link to press pages where possible.</p>
+          <div class="stats">
+            <div class="stat">
+              <div style="font-size:1.1rem">Followers</div>
+              <div style="font-weight:700">—</div>
+            </div>
+            <div class="stat">
+              <div style="font-size:1.1rem">Projects</div>
+              <div style="font-weight:700">—</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>Contact</h3>
+          <p style="color:var(--muted)">For press, partnerships, or licensing inquiries.</p>
+          <form id="contact" onsubmit="event.preventDefault();alert('Replace this with real form handler.');">
+            <div style="margin-bottom:8px">
+              <input required placeholder="Name" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
+            </div>
+            <div style="margin-bottom:8px">
+              <input required type="email" placeholder="Email" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
+            </div>
+            <div style="margin-bottom:8px">
+              <textarea rows="3" placeholder="Message" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit"></textarea>
+            </div>
+            <button class="cta" style="width:100%;text-align:center;border:none;cursor:pointer">Send</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © Ignite — curated feature. Replace content with verified sources and images before publishing.
+    </footer>
+  </div>
+</body>
+</html>
